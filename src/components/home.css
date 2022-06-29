@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+nav{
+    width:100%;
+    height:150px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.logo{
+    float: left;
+}
+.logo img{
+    height: 150px;
+}
+
+.links{
+    float: right;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 70px;
+}
+
+.nav-links li{
+    line-height: 50px;
+    margin-right: 25px;
+}
+
+.search{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #b7b7b7;
+    margin-top: 20px;
+}
+
+.signin{
+    border-right: 1px solid rgb(132, 128, 128);
+    padding-right: 20px ;
+}
+
+.menu {
+   display: none;
+}
+
+
+main{
+    height: 600px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main .left-sidebar{
+    width: 15.7%;
+    height:500px;
+}
+
+.left-list{
+    margin-top: 50px;
+}
+.left-sidebar ul li{
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+}
+.left-list .sister-sites{
+        margin-top: 120px;
+        
+}   
+
+.left-list .sister-sites .tag{
+    border-bottom: 0.5px solid black;
+    padding-bottom: 10px;
+}
+
+.left-list .sister-sites .wrapper{
+    display: flex;
+    border-bottom: 0.5px solid black;
+    margin-top: 12px;
+    
+}
+.left-list .sister-sites .wrapper img {
+    height: 45px;
+    margin-right:10px ;
+    width: 50px;
+    
+}
+
+
+footer {
+    height :300px;
+    display: flex;
+    justify-content: space-between;
+}
+.birds{
+    margin-top: 90px;
+    margin-left: 0;
+}
+
+@media screen and  (max-device-width:800px) {
+    .nav-links{
+        display: none;
+    }
+    
+
+    .nav-links-mobile {
+        position: absolute;
+        top:80px;
+        left:0;
+        background-color: #efefef;
+        transition: all 1s ease-in;
+        width: 90%;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+        box-shadow: 0px 0px 10px 0px rgb(145, 145, 145);
+        
+    }
+    
+    nav{
+        background-color: #0c206e;
+        height: 100px;
+    }
+    
+   .nav-links-mobile li p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links-mobile li{
+        margin-top: 20px;
+    }
+    .usericon{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        height: 40px;
+        margin-top: 35px;
+    }
+
+    .logo img{
+        height: 100px;
+    }
+
+    .left-list{
+        display: none;
+    }
+    footer{
+        height: 200px;
+    }
+    .footer img{
+        width: 100px;
+    }
+}
