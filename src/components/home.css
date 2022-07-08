@@ -33,6 +33,7 @@ nav{
     border-radius: 10px;
     border-color: #b7b7b7;
     margin-top: 20px;
+    outline: none;
 }
 
 .signin{
@@ -44,24 +45,32 @@ nav{
    display: none;
 }
 
+    
+.usericon{
+    transform: translateX(50%);
+}
 
 main{
     height: 600px;
     font-family: 'Montserrat', sans-serif;
 }
 
+
 main .left-sidebar{
     width: 15.7%;
     height:500px;
-}
+    position: absolute;
+}   
 
 .left-list{
     margin-top: 50px;
+    list-style: none;
 }
 .left-sidebar ul li{
     padding-bottom: 10px;
     margin-top: 20px;
     border-bottom: 1px solid black;
+    display: flex;
 }
 .left-list .sister-sites{
         margin-top: 120px;
@@ -86,16 +95,45 @@ main .left-sidebar{
     
 }
 
+.left-menu{
+    display: none;
+}
+
+.left-list li div{
+    background-color: #8bf0fe;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 8px;
+    margin-top: 3px;
+    
+}
+
 
 footer {
-    height :300px;
+    height :200px;
     display: flex;
     justify-content: space-between;
 }
 .birds{
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: 0;
 }
+
+.plant{
+    height: 200px;
+}
+
+
+.right-content{
+    margin-left: 400px;
+}
+
+.right-container{
+    display: flex;
+}
+
+
 
 @media screen and  (max-device-width:800px) {
     .nav-links{
@@ -107,14 +145,14 @@ footer {
         position: absolute;
         top:80px;
         left:0;
-        background-color: #efefef;
+        background-color: #f9f8f8;
         transition: all 1s ease-in;
         width: 90%;
         list-style: none;
         align-items: center;
         text-align: center;
         padding-bottom: 20px;
-        box-shadow: 0px 0px 10px 0px rgb(145, 145, 145);
+        box-shadow: 0px 0px 15px 0px rgb(145, 145, 145);
         
     }
     
@@ -141,6 +179,15 @@ footer {
         margin-top: 35px;
     }
 
+    main .left-sidebar{
+        height: 50px;
+        position: static;
+    }
+
+    .left-menu{
+        display: block;
+    }
+    
     .logo img{
         height: 100px;
     }
@@ -148,10 +195,70 @@ footer {
     .left-list{
         display: none;
     }
+
+    .mobile-left-list {
+        position: absolute;
+        top:150px;
+        background-color: #f9f8f8;
+        transition: all 1s ease-in;
+        width: 90%;
+        list-style: none;
+        /* align-items: center;
+        text-align: center; */
+        padding-bottom: 20px;
+        box-shadow: 0px 0px 20px 0px rgb(145, 145, 145);
+
+
+    }
+
+    .mobile-left-list li div{
+        background-color: #8bf0fe;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        margin-right: 8px;
+        margin-top: 3px;
+        
+    }
+
+    .sister-sites .tag{
+        margin-top: 55px;
+    }
+    .mobile-left-list .sister-sites .wrapper{
+        display: flex;
+        border-bottom: 0.5px solid black;
+        margin-top: 15px;
+    }
+
+    .mobile-left-list .sister-sites .wrapper img {
+        height: 45px;
+        margin-right:10px ;
+        width: 50px;
+      
+    }
+
     footer{
         height: 200px;
     }
     .footer img{
         width: 100px;
     }
+
+    .right-content{
+        margin-left: 0px;
+        font-size: 0.7em;
+        
+    }
+    .right-container{
+        display: block;
+    }
+    .right-container .text{
+        margin-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    
+
 }
