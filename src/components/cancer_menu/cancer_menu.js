@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import { Button } from "@mui/material";
-import './home.css'
-import logo from '../static/logo.png';
-import cancerLogo from '../static/cancer-light.png'
-import revolutionLogo from '../static/revolution.png'
+import '../css/global.css';
+import './cancer_menu.css';
+import logo from '../../static/logo.png';
+import cancerLogo from '../../static/cancer-light.png'
+import revolutionLogo from '../../static/revolution.png'
 import PersonIcon from '@mui/icons-material/Person';
 import MenuIcon from '@mui/icons-material/Menu';
-import leafs from '../static/leafs.png';
-import birds from '../static/birds.png';
-import { width } from "@mui/system";
-import intro from '../static/intro.mp4';
+import leafs from '../../static/leafs.png';
+import birds from '../../static/birds.png';
+import treatmentGuide from '../../static/treatment-guide.png'
+import centerGuide from '../../static/center-guide.png'
+import pharaLogo from '../../static/pharma.png'
+import trialFinder from '../../static/trial-finder.png'
 
-
-function Home() {
+function CancerMenu() {
     const [isTopNav, setIsTopNav] = useState(false);
     const [isLeftNav, setIsLeftNav] = useState(false)
 
@@ -33,6 +35,7 @@ function Home() {
             setIsLeftNav(false);
         }
     }
+
     return (
         <>
             <nav>
@@ -88,15 +91,34 @@ function Home() {
                             <MenuIcon sx={{ fontSize: 40, color: "black" }} /> </button>
                     </div>
                 </div>
-                <div className="right-content">
-                    <div className="right-container">
-                        <div className="text">
-                            <h1>Welcome to Cancer Clarity</h1>
-                            <p>Choosing the right disease process for your asset is imperative. Several drugs have performed suboptimally because they weren't studied in the ideal disease. As opposed to all of our competitors, we have broad expertise in all of hematology and medical oncology, uniquely enabling us to best identify where to position your asset. Our consultants all have MD and MBA degrees, and have conducted clinical trials in numerous hematologic and oncologist disorders. Our CEO has an MD, PhD, and MBA, and has participated in nearly 100 clinical trials. He has three papers in the NEJM and two in Lancet. He served as the medical director for Xbiotech, and was the national medical monitor for three of their trials.</p>
-                        </div>
-                        <div className="media">
-                            <video src={intro} width="750" height="500" autoPlay loop muted/>
-                        
+                <div className="right-content1">
+                    <div className="right-container1">
+                        <div style={{ height: "2px" }}></div>
+                        <div className="box">
+                            <div className="box-wrapper">
+                                <div className="box1">
+                                <img src={trialFinder}></img>
+                                </div>
+                                <p>Clinical Trial Finder</p>
+                            </div>
+                            <div className="box-wrapper">
+                                <div className="box2">
+                                <img src={treatmentGuide}></img>
+                                </div>
+                                <p>CC Treatment Guide</p>
+                            </div>
+                            <div className="box-wrapper">
+                                <div className="box3">
+                                <img src={pharaLogo}></img>
+                                </div>
+                                <p>Pharmaceutical Consulting</p>
+                            </div>
+                            <div className="box-wrapper">
+                                <div className="box4">
+                                <img src={centerGuide}></img>
+                                </div>
+                                <p>Cancer Center Consulting</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,4 +134,4 @@ function Home() {
         </>
     )
 }
-export default Home;
+export default CancerMenu;

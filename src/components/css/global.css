@@ -51,7 +51,6 @@ nav{
 }
 
 main{
-    height: 600px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -98,9 +97,7 @@ main .left-sidebar{
 .left-menu{
     display: none;
 }
-
 .left-list li div{
-    background-color: #8bf0fe;
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -108,34 +105,45 @@ main .left-sidebar{
     margin-top: 3px;
     
 }
-
+.left-list li .dot1{
+    background-color: #2b2a81;
+    
+}
+.left-list li .dot2{
+    background-color: #bde7fb;
+}
+.left-list li .dot3{
+    background-color: #008dd0;
+    
+}
+.left-list li .dot4{
+    background-color: #0a2d62;
+    
+}
+.left-list li .dot5{
+    background-color: #00dea9;    
+}
 
 footer {
     height :200px;
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 .birds{
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 0;
+    height: 150px;
 }
 
 .plant{
-    height: 200px;
-}
-
-
-.right-content{
-    margin-left: 400px;
-}
-
-.right-container{
-    display: flex;
+    height: 270px;
 }
 
 
 
-@media screen and  (max-device-width:800px) {
+
+@media screen and  (max-device-width:1000px) {
     .nav-links{
         display: none;
     }
@@ -153,7 +161,7 @@ footer {
         text-align: center;
         padding-bottom: 20px;
         box-shadow: 0px 0px 15px 0px rgb(145, 145, 145);
-        
+        z-index: 5;
     }
     
     nav{
@@ -207,6 +215,7 @@ footer {
         text-align: center; */
         padding-bottom: 20px;
         box-shadow: 0px 0px 20px 0px rgb(145, 145, 145);
+        z-index: 5;
 
 
     }
@@ -238,27 +247,10 @@ footer {
     }
 
     footer{
+        display: none;
         height: 200px;
     }
     .footer img{
         width: 100px;
     }
-
-    .right-content{
-        margin-left: 0px;
-        font-size: 0.7em;
-        
-    }
-    .right-container{
-        display: block;
-    }
-    .right-container .text{
-        margin-top: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-    }
-
-    
-
 }
